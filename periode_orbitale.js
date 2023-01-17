@@ -30,8 +30,7 @@ const afficherAge = (age, planete) => { resultat=(`Votre âge sur ${planete} est
 
 /////////// SCRIPT
 if (verifInput(age)) {
-    age=convertirAgePlanete(convertirAgeEnJours(age), planete);
-    afficherAge(age, planete);
+    age=convertirAgeEnJours(age);
 } else {
     window.alert("Valeur incorrecte");
 }

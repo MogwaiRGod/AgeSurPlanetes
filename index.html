@@ -11,51 +11,73 @@
         
     </head>
 
-    <body style="background: rgb(24, 23, 23)">
-        <style>
-            * {
-                font-family: Helvetica, sans-serif;
-                size: 14;
-                color: rgb(238, 235, 245);
-            } 
-            body {
-                padding: 0;
-                margin: 0;
-            }
-            option, select {
-                background:rgb(27, 29, 33);
-                size: 18;
-            }
-            h1 {
-                top: 5%;
-                font-family: Georgia, Garamond, serif;
-            }
-            h2, h1, p {
-                text-align: center;
-            }
-            h2, h1 {
-                font-weight: lighter
-            }
-            nav {
-                width: 100%;
-                padding: 1% 0;
-                margin: 0;
-                background-color: black;
-            }
+    <body>
+        <main>
+            <div>
+                <style>
+                    * {
+                        font-family: Helvetica, sans-serif;
+                        font-size: 14pt;
+                        color: rgb(238, 235, 245);
+                        background: rgb(24, 23, 23);
+                    } 
+                    body {
+                        display: block;
+                        padding: 0;
+                        margin: 0;
+                    }
+                    option, select {
+                        background:rgb(27, 29, 33);
+                        font-size: 12pt;
+                    }
+                    h1 {
+                        top: 5%;
+                        font-family: Georgia, Garamond, serif;
+                        font-weight: lighter;
+                        font-size: 24pt;
+                    }
+                    h2 {
+                        font-size: 16pt;
+                        font-weight: lighter;
+                    }
+                    h2, h1, p {
+                        text-align: center;
+                    }
+                    nav {
+                        width: 100%;
+                        padding: 1% 0;
+                        margin: 0;
+                        background-color: black;
+                    }
+                    #selection {
+                        position: relative;
+                        display: flex;
+                        flex-direction: row;
+                        left: 44%;
+                    }
+                    button {
+                        font-size: 12pt;
+                    }
 
-        </style>
-        <nav></nav>
-        <h1>Calculez votre âge sur d'autres planètes du système solaire !</h1>
-        <h2>Choisissez une planète</h2>
-        <select name="Planetes">
-            <option name="Merc">Mercure</option>
-            <option name="Ven">Vénus</option>
-            <option name="Mars">Mars</option>
-            <option name="Jup">Jupiter</option>
-            <option name="Sat">Saturn</option>
-            <option name="Nep">Neptune</option>
-            <option name="Ur">Uranus</option>
-        </select>
-        <p name="resultat"><script>document.write(resultat)</script></p>
+                </style>
+                <nav></nav>
+                <h1>Calculez votre âge sur<br>d'autres planètes du système solaire !</h1>
+                <h2>Choisissez une planète</h2>
+                <div id="selection">
+                    <select name="Planetes">
+                        <option name="Merc">Mercure</option>
+                        <option name="Ven">Vénus</option>
+                        <option name="Mars">Mars</option>
+                        <option name="Jup">Jupiter</option>
+                        <option name="Sat">Saturn</option>
+                        <option name="Nep">Neptune</option>
+                        <option name="Ur">Uranus</option>
+                    </select>
+                    <button name="validation">Valider</button>
+                </div>
+                <p name="resultat"><script>document.write(resultat)</script></p>
+            </main>
+            <footer></footer>
+        </div>
     </body>
 </html>
