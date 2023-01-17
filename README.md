@@ -1,5 +1,5 @@
 ## AgeSurPlanetes
-Calculeur d'âge sur d'autres planètes du système solaire.
+Calculateur d'âge sur d'autres planètes du système solaire.
 
 ### Auteur
 Diane (MogwaiRGod)
