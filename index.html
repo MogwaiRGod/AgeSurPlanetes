@@ -16,8 +16,46 @@
             * {
                 font-family: Helvetica, sans-serif;
                 size: 14;
-                color: rgb(247, 246, 249);
+                color: rgb(238, 235, 245);
             } 
+            body {
+                padding: 0;
+                margin: 0;
+            }
+            option, select {
+                background:rgb(27, 29, 33);
+                size: 18;
+            }
+            h1 {
+                top: 5%;
+                font-family: Georgia, Garamond, serif;
+            }
+            h2, h1, p {
+                text-align: center;
+            }
+            h2, h1 {
+                font-weight: lighter
+            }
+            nav {
+                width: 100%;
+                padding: 1% 0;
+                margin: 0;
+                background-color: black;
+            }
+
         </style>
+        <nav></nav>
+        <h1>Calculez votre âge sur d'autres planètes du système solaire !</h1>
+        <h2>Choisissez une planète</h2>
+        <select name="Planetes">
+            <option name="Merc">Mercure</option>
+            <option name="Ven">Vénus</option>
+            <option name="Mars">Mars</option>
+            <option name="Jup">Jupiter</option>
+            <option name="Sat">Saturn</option>
+            <option name="Nep">Neptune</option>
+            <option name="Ur">Uranus</option>
+        </select>
+        <p name="resultat"><script>document.write(resultat)</script></p>
     </body>
 </html>
