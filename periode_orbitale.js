@@ -9,11 +9,12 @@ const tab_planetes={
     'Uranus':30666.14879,
     'Neptune':60148.8318
 };
-let resultat = document.getElementsByTagName("resultat");
+let resultat = document.getElementById("resultat");
+let planete;
+let button=document.querySelector('button');
 
 /// inputs
 let age=parseInt(window.prompt("Entrer votre âge :")); // conversion en entier de l'entrée utilisateur
-let planete="Vénus";
 
 
 
@@ -34,3 +35,10 @@ if (verifInput(age)) {
 } else {
     window.alert("Valeur incorrecte");
 }
+
+
+button.addEventListener('click', e => {
+    planete=document.getElementsByName('planetes-planete').value;
+  });
+
+console.log(planete.id);
