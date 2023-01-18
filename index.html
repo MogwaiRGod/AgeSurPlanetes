@@ -3,12 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta id="viewport" content="width=device-width, initial-scale=1.0">
         <title>Calculateur d'âge sur d'autres planètes</title>
-        <!--<link media="screen" href="./style.css" type="text/css" rel="stylesheet">-->
-        
-        <script src="./periode_orbitale.js" type="text/javascript"></script>
-        
+        <!--<link media="screen" href="./style.css" type="text/css" rel="stylesheet">-->        
     </head>
 
     <body>
@@ -20,6 +17,7 @@
                         font-size: 14pt;
                         color: rgb(238, 235, 245);
                         background: rgb(24, 23, 23);
+                        overflow: hidden;
                     } 
                     body {
                         display: block;
@@ -64,18 +62,19 @@
                 <h1>Calculez votre âge sur<br>d'autres planètes du système solaire !</h1>
                 <h2>Choisissez une planète</h2>
                 <div id="selection">
-                    <select name="Planetes">
-                        <option name="Merc">Mercure</option>
-                        <option name="Ven">Vénus</option>
-                        <option name="Mars">Mars</option>
-                        <option name="Jup">Jupiter</option>
-                        <option name="Sat">Saturn</option>
-                        <option name="Nep">Neptune</option>
-                        <option name="Ur">Uranus</option>
+                    <select id="Planetes">
+                        <option name=planete value="Mercure" id="Merc">Mercure</option>
+                        <option name=planete value="Venus" id="Ven">Vénus</option>
+                        <option name=planete value="Mars" id="Mars">Mars</option>
+                        <option name=planete value="Jupiter" id="Jup">Jupiter</option>
+                        <option name=planete value="Saturne" id="Sat">Saturn</option>
+                        <option name=planete value="Neptune" id="Nep">Neptune</option>
+                        <option name=planete value="Uranus" id="Ur">Uranus</option>
                     </select>
-                    <button name="validation">Valider</button>
+                    <button id="validation">Valider</button>
                 </div>
-                <p name="resultat"><script>document.write(resultat)</script></p>
+                <p id="resultat"></script></p>
+                <script src="./periode_orbitale.js" type="text/javascript"></script>
             </main>
             <footer></footer>
         </div>
