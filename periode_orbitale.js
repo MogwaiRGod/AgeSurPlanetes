@@ -41,4 +41,4 @@ button.addEventListener('click', e => {
     planete=document.getElementsByName('planetes-planete').value;
   });
 
-console.log(planete.id);
+console.log(planete);
